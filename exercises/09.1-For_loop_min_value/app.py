@@ -5,3 +5,21 @@ my_list = [3344,34334,454543,342534,4563456,3445,23455,234,262,2335,
 35,243,371,3251,351223,13231243,734,856,56,53,234342,56,545343]
 
 #Your code here:
+def max_int():
+    max_num = 0
+    for num in my_list:
+        if num > max_num:
+            max_num = num
+    return max_num
+
+def min_int():
+    min_num = max_int()
+    for num in my_list:
+        if num < min_num:
+            min_num = num
+    return min_num
+
+print(max_int())
+
+
+print(min_int())

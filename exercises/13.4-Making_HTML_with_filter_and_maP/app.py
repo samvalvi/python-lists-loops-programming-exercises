@@ -9,4 +9,12 @@ all_colors = [
 ]
 
 #Your code go here:
+def generate_li(color):
+    return color["sexy"]==True
 
+def filter_colors(): 
+    sexy_colors=list(filter(generate_li,all_colors))
+    sexy_colors_list=list(map(lambda color: "<li>"+color["label"]+"</li>",sexy_colors))
+    no_comas_color_li="".join(sexy_colors_list)
+    return no_comas_color_li
+print(filter_colors())
